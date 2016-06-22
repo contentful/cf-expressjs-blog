@@ -1,0 +1,10 @@
+extends layout.jade
+
+block nav
+  a.blog-nav-item(href="/") Home
+  a.blog-nav-item.active(href="#")= category.fields.title
+
+block content
+  h2.blog-post-title Posts classified in "#{category.fields.title}"
+  .blog-post-meta #{category.fields.shortDescription}
+  +blogpostList(posts, 3)

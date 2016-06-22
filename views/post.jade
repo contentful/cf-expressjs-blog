@@ -1,0 +1,12 @@
+extends layout
+
+block nav
+  a.blog-nav-item(href="/") Home
+  a.blog-nav-item.active(href="#")= title
+
+block content
+  +blogpost(title, date, author, categories)
+    if featuredImage
+      div.featured
+        img(src=featuredImage.file.url, title=featuredImage.title)
+    section!= body

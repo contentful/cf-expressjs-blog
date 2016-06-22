@@ -1,0 +1,20 @@
+mixin blogpostList(posts, level)
+  each post in posts
+    +blogpost(post.title, post.date, post.author, post.categories, level)
+      p!= post.plot
+      ul.pager
+        li
+          a(href='post/' + post.slug) Read more...
+
+mixin blogpost(title, date, author, postCategories, level)
+  .blog-post
+    if level == 2
+      h2.blog-post-title #{title}
+    else
+      h3 #{title}
+    .blog-post-meta #{date} by <a href="#{author.website}" target="_blank">#{author.name}</a> in
+      each category, index in postCategories
+        span= index > 0 ? ', ' : ' '
+        a(href='/category/' + category.sys.id)= category.fields.title
+    if block
+      block

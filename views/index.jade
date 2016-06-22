@@ -1,0 +1,7 @@
+extends layout
+
+block nav
+  a.blog-nav-item.active(href="/") Home
+
+block content
+  +blogpostList(posts, 2)
