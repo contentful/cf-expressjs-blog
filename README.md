@@ -1,5 +1,7 @@
 This example showcases usage of the Contentful Delivery API through the Node.js SDK for building the blog using the Blog demo space.
 
+![screenshot](./screenshot.png)
+
 # About
 
 [Contentful](https://www.contentful.com) is a content management platform for web applications, mobile apps and connected devices. It allows you to create, edit & manage content in the cloud and publish it anywhere via a powerful API. Contentful offers tools for managing editorial teams and enabling cooperation between organizations.
