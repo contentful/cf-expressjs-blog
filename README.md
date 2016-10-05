@@ -20,6 +20,8 @@ Install dependencies
 $ npm install
 ```
 
+To check the app in the browser navigate to `http://localhost:3000`
+
 Start the project
 
 ```sh
