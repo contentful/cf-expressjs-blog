@@ -4,7 +4,7 @@ mixin blogpostList(posts, level)
       p!= post.plot
       ul.pager
         li
-          a(href='post/' + post.slug) Read more...
+          a(href='/post/' + post.slug) Read more...
 
 mixin blogpost(title, date, author, postCategories, level)
   .blog-post
