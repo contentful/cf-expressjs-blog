@@ -1,3 +1,10 @@
+
+# Deprecation notice
+ 
+This repository is deprecated and no further maintenance is planned. For an express.js example, please see https://github.com/contentful/the-example-app.nodejs
+ 
+---
+
 This example showcases usage of the Contentful Delivery API through the Node.js SDK for building the blog using the Blog demo space.
 
 ![screenshot](./screenshot.png)
